@@ -1,0 +1,10 @@
+[package]
+name = "hacker-news-pull"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hacker-news = "0.1.1"
+rusqlite = "0.25.3"
