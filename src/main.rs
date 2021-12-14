@@ -101,7 +101,7 @@ async fn main() -> Result<(), Box<dyn Error>>{
             tokio::time::sleep(interval).await;
             i += 1;
             let client = Client::new();
-            let listings = match client.newest() {
+            let listings = match client.news() {
                 Ok(list) => list,
                 Err(err) => {
                     log::warn!("Client::listings got error response: {}", err);
